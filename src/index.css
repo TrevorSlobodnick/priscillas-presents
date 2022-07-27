@@ -1,13 +1,54 @@
-body {
+/* Resets */
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul{
+  list-style-type: none;
+}
+
+/* Themes */
+
+.light-mode{
+  --priscillas-background: #FFF7DA; /*f1f1ce*/
+  --scoops-background: #FFCBE0; /*f1ecec*/
+  --text-color: black;
+}
+
+.dark-mode{
+  --priscillas-background: #5B7086;
+  --scoops-background: black;
+  --text-color: white;
+}
+
+/* Styles */
+#priscillas{
+  background-color: var(--priscillas-background);
+}
+
+#scoops{
+  background-color: var(--scoops-background);
+}
+
+.container{
+  height: 100vh;
+  color: var(--text-color);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priscillas-present-logo{
+  width: 100%;
+}
+
+.heres-the-scoop-logo{
+  width: 132px;
+  height: 77px;
 }

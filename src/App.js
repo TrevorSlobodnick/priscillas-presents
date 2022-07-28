@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
       <div className={darkMode ? "dark-mode" : "light-mode"}>
         <Routes>
-          <Route path="/" element={<PriscillasPage />} />
-          <Route path="/ice-cream" element={<ScoopsPage />} />
+          <Route path="/" element={<PriscillasPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
+          <Route path="/ice-cream" element={<ScoopsPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
         </Routes>
       </div>
     </BrowserRouter>

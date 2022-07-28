@@ -67,3 +67,13 @@ header{
   width: 132px;
   height: 77px;
 }
+
+#dark-mode-wrapper{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dark-mode-toggle{
+  margin: 0rem 0.5rem !important;
+}

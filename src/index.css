@@ -13,42 +13,57 @@ ul{
 /* Themes */
 
 .light-mode{
-  --priscillas-background: #FFF7DA; /*f1f1ce*/
-  --scoops-background: #FFCBE0; /*f1ecec*/
+  --priscillas-header-bg: #ffefb6;
+  --priscillas-body-bg: #fff7da3e;
+  --scoops-header-bg: #ffb1d0;
+  --scoops-body-bg: #ffe3ee;
   --text-color: black;
 }
 
 .dark-mode{
-  --priscillas-background: #5B7086;
-  --scoops-background: black;
+  --priscillas-header-bg: #415060;
+  --priscillas-body-bg: #303841;
+  --scoops-header-bg: #70354b;
+  --scoops-body-bg: #411324;
   --text-color: white;
 }
 
 /* Styles */
+#priscillas, #scoops{
+  min-height: 100vh;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
 #priscillas{
-  background-color: var(--priscillas-background);
+  background-color: var(--priscillas-body-bg);
 }
 
 #scoops{
-  background-color: var(--scoops-background);
+  background-color: var(--scoops-body-bg);
 }
 
-.container{
-  height: 100vh;
-  color: var(--text-color);
+#priscillas header{
+  background-color: var(--priscillas-header-bg);
+}
+
+#scoops header{
+  background-color: var(--scoops-header-bg);
 }
 
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
-.priscillas-present-logo{
-  width: 100%;
+#priscillas-logo{
+  width: 230px;
+  height: 81px;
 }
 
-.heres-the-scoop-logo{
+#scoops-logo{
   width: 132px;
   height: 77px;
 }

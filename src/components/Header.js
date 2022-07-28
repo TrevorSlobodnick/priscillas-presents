@@ -4,8 +4,8 @@ import { ReactComponent as ScoopsLogo } from "../images/scoops-logo.svg"
 const Header = () => {
   return (
     <header>
-        <PriscillasLogo />
-        <ScoopsLogo />
+        <PriscillasLogo id="priscillas-logo" />
+        <ScoopsLogo id="scoops-logo" />
     </header>
   )
 }

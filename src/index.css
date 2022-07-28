@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Delius';
+  src: url("./fonts/Delius-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Itim';
+  src: url("./fonts/Itim-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'ShortStack';
+  src: url("./fonts/ShortStack-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf")
+}
+
 /* Resets */
 *{
   margin: 0;
@@ -32,7 +52,7 @@ ul{
 #priscillas, #scoops{
   min-height: 100vh;
   color: var(--text-color);
-  fill: var(--text-color);
+  font-family: "ShortStack";
 }
 
 #priscillas{
@@ -58,6 +78,10 @@ header{
   padding: 1rem;
 }
 
+#priscillas-logo, #scoops-logo{
+  fill: var(--text-color);
+}
+
 #priscillas-logo{
   width: 230px;
   height: 81px;
@@ -76,4 +100,16 @@ header{
 
 .dark-mode-toggle{
   margin: 0rem 0.5rem !important;
+}
+
+p{
+  padding: 1rem;
+}
+
+p:nth-of-type(1){
+  font-family: "ShortStack";
+}
+
+p:nth-of-type(2){
+  font-family: "Montserrat";
 }

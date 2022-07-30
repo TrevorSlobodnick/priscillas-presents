@@ -13,17 +13,9 @@
   src: url("./fonts/Pacifico-Regular.ttf")
 }
 
-/* Resets */
-*{
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-}
 
-ul{
-  list-style-type: none;
-}
+
+
 
 /* Themes */
 
@@ -43,7 +35,38 @@ ul{
   --text-color: white;
 }
 
-/* Styles */
+
+
+
+
+
+/* Basic Styles  */
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+
+
+
+
+/* Styles with classes and ids */
+
 #priscillas, #scoops{
   min-height: 100vh;
   color: var(--text-color);
@@ -70,13 +93,6 @@ ul{
 
 #scoops header{
   background-color: var(--scoops-header-bg);
-}
-
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 #priscillas-logo, #scoops-logo{
@@ -117,12 +133,4 @@ header{
 
 .dark-mode-toggle{
   margin: 0rem 0.5rem !important;
-}
-
-p{
-  padding: 1rem;
-}
-
-h1{
-  font-family: "Pacifico";
 }

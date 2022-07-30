@@ -99,22 +99,6 @@ header{
   fill: var(--text-color);
 }
 
-.light-mode #priscillas #priscillas-logo{
-  filter: drop-shadow(0px 0px 1px black);
-}
-
-.light-mode #scoops #scoops-logo{
-  filter: drop-shadow(2px 2px 6px black);
-}
-
-.dark-mode #priscillas #priscillas-logo{
-  filter: drop-shadow(0px 0px 1px white);
-}
-
-.dark-mode #scoops #scoops-logo{
-  filter: drop-shadow(2px 2px 6px white);
-}
-
 #priscillas-logo{
   width: 230px;
   height: 81px;
@@ -133,4 +117,20 @@ header{
 
 .dark-mode-toggle{
   margin: 0rem 0.5rem !important;
+}
+
+
+
+
+
+
+/* Header Logo Styles (Dark/Light Mode) */
+#priscillas #scoops-logo,
+#scoops #priscillas-logo{
+  filter: opacity(0.6);
+}
+
+#priscillas #scoops-logo:hover,
+#scoops #priscillas-logo:hover{
+  filter: opacity(1);
 }
